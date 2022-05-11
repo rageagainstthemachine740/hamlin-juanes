@@ -1,0 +1,594 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: black;
+}
+/*****************************NAVBAR***********************************/
+nav{
+    background-color: rgba(0, 0, 0, 0.445);
+    grid-area: header;
+    font-size: 20px;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    /*margin: 0 5px;*/
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    /*border-radius: 3px;*/
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background-color: rgb(68, 48, 48);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 40px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*****************************INDEX*********************************/
+.index__body{
+    background-image: url("../images/background-index4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.index__principal{
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "primeraCaja segundaCaja";
+}
+.caja1{
+    grid-area: primeraCaja;
+}
+.caja2{
+    padding-top: 50px;
+    grid-area: segundaCaja;
+    text-align: center;
+}
+.index__grid{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8.5fr 0.5fr;
+    grid-template-areas: 
+    "header    header"
+    "principal principal"
+    "footer    footer";
+}
+.index__main-title{
+    text-decoration: underline;
+    padding: 90px  30px    40px    30px;
+}
+.index__main-description{
+    font-size: 20px;
+    padding: 0px  30px    35px    30px;
+}
+.index__main-h2{
+    padding: 0px  30px  0px    30px;
+    font-size: 35px;
+}
+.index__main-link{
+    color: black
+}
+.footer{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.452);
+    grid-area: footer;
+}
+/*******************************CONTACT-US*****************************/
+.contact-us__body{
+    background-image: url("../images/background-table.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-us__principal{
+    color: black;
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "primeraCaja segundaCaja terceraCaja";
+}
+.contact-us__caja1{
+    padding: 50px 0 50px 0px;
+    grid-area: primeraCaja;
+}
+.contact-us__caja2{
+    grid-area: segundaCaja;
+}
+.contact-us__caja3{
+    grid-area: terceraCaja;
+}
+.contact-us__grid{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8.5fr 0.5fr;
+    grid-template-areas: 
+    "header    header"
+    "principal principal"
+    "footer    footer";
+}
+.contact-us__main-title{
+    padding: 15px 0  30px   10px;
+    color: black;
+    text-align: center;
+}
+.contact-us__main-description{
+    font-size: 20px;
+    padding: 0px  30px    35px    30px;
+    /*text-align: center;*/
+}
+/*.contact-us__form{
+    width: 200px;
+}*/
+.contact-us__form-input{
+    padding: 0  0   5px 30px;
+}    
+/***************************ABOUT-US*************************************/
+.about-us__body{
+    background-image: url(../images/background-index3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-us__grid{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8.5fr 0.5fr;
+    grid-template-areas: 
+    "header    header"
+    "principal principal"
+    "footer    footer";
+}
+.about-us__principal{
+    color: black;
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "primeraCaja primeraCaja"
+    "segundaCaja segundaCaja";
+}   
+.about-us__caja1{
+    padding: 50px 0px 50px 0px;
+    margin: 0   20px  0   20px;
+    grid-area: primeraCaja;
+}
+.about-us__caja2{
+    padding: 0px 70px 0px 70px;
+    margin: 0   20px  0   20px;
+    grid-area: segundaCaja;
+}
+.about-us__main-title{
+    padding: 30px   0  50px   0;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+.about-us__section{
+    margin: 0   30px    0   30px;
+}    
+.about-us__section__main-description{
+    padding: 30px    50px    30px    50px;
+    border: 0.5px solid;
+    background-color: rgba(255, 255, 255, 0.555);
+}
+.about-us__img{
+    width: 95%;
+    height: 500px;
+    text-align: center;
+    padding: 0;
+}
+/*******************************REFERENCES*****************************/
+.references__body{
+    background-image: url(../images/background-index3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.references__grid{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8.5fr 0.5fr;
+    grid-template-areas: 
+    "header    header"
+    "principal principal"
+    "footer    footer";
+}
+.references__principal{
+    color: black;
+    grid-area: principal;
+    background-color: rgba(255, 255, 255, 0.219);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1,4fr);
+    grid-template-areas:
+    "primeraCaja primeraCaja"
+    "segundaCaja segundaCaja"
+    "segundaCaja segundaCaja"
+    "segundaCaja segundaCaja";
+}   
+.references__main-title{
+    text-align: center;
+    padding: 45px   0   10px    0;
+    text-decoration: underline;
+}
+.references__main   p{
+    padding: 20px   15px  0px   15px;
+    color: black;
+    text-align: center;   
+}
+.references__main-description{
+    margin: 0%  10% 0  10%;
+}
+.references__img{
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    padding: 0   0   45px    0;
+}
+.references__caja1{
+    grid-area: primeraCaja;
+}
+    
+.references__caja2{
+    text-align: center;
+    grid-area: segundaCaja;
+}
+/*****************************SERVICES*********************************/
+.services__body{
+    background-image: url(../images/back2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.services__grid{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8.5fr 0.5fr;
+    grid-template-areas: 
+    "header    header"
+    "principal principal"
+    "footer    footer";
+}
+.services__principal{
+    color: black;
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "primeraCaja primeraCaja primeraCaja"
+    "segundaCaja segundaCaja segundaCajaimg"
+    "terceraCaja terceraCaja terceraCajaimg" 
+    "cuartaCaja  cuartaCaja  cuartaCajaimg";
+}   
+.services__grid{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8.5fr 0.5fr;
+    grid-template-areas: 
+    "header    header"
+    "principal principal"
+    "footer    footer";
+}
+.services__main{
+    grid-area: primeraCaja;
+}
+.services__derecho-familia{
+    grid-area: segundaCaja;
+}
+.services__derecho-penal{
+    grid-area: terceraCaja;
+}
+.services__derecho-laboral{
+    grid-area: cuartaCaja;
+}
+.services__main-title{
+    padding: 40px 0 20px    20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.services__description{
+    padding: 0  0   0px    20px;
+}
+.services__title{
+    padding: 20px 0 0px    20px; 
+    text-decoration: underline;  
+}
+.services__description{
+    padding: 15px 0 25px    20px;
+}
+.services__main-description{
+    text-align: center;
+    padding: 15px   0   15px   20px;
+}
+.services__familia-img{
+    width: 75%;
+    height: 75%;
+    margin: 10%;
+    border: 1px solid black;
+    grid-area: segundaCajaimg;
+}
+.services__penal-img{
+    width: 75%;
+    height: 75%;
+    margin: 10%;
+    border: 1px solid black;
+    grid-area: terceraCajaimg;
+}    
+.services__laboral-img{
+    width: 75%;
+    height: 75%;
+    margin: 10%;
+    border: 1px solid black;
+    grid-area: cuartaCajaimg;
+}    
+/***********************MEDIA QUERYES********************************/
+
+/***************************INDEX***********************************/
+@media only screen and (max-width: 925px){
+    .index__grid{
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.2fr 8.6fr 1.2fr;
+        grid-template-areas: 
+        "header    header"
+        "principal principal"
+        "footer    footer";
+    }
+    .index__principal{
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+        "segundaCaja";
+        }
+        .caja1{
+            display: none;
+        }   
+        .caja2{
+            text-align: center;
+        }
+        .index__main-title{
+            text-decoration: underline;
+            padding: 70px  0    40px    0px;
+        }
+        .index__main-description{
+            font-size: 20px;
+            /*padding: 0px  30px    35px    30px;*/
+            margin: 0%  20% 0   20%;
+        }
+        .index__main-h2{
+            padding: 0px  30px  180px    30px;
+            font-size: 35px;
+        }    
+    /********************************FOOTER*****************************/    
+    .footer{
+        padding: 25px;
+        text-align: center;
+    }
+    /***************************NAVBAR RESPONSIVE**********************/
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(29, 27, 27);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+/***************************CONTACT-US********************************/
+@media only screen and (max-width: 925px){
+    .contact-us__grid{
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.2fr 8.6fr 1.2fr;
+        grid-template-areas: 
+        "header    header"
+        "principal principal"
+        "footer    footer";
+    }
+    .contact-us__principal{
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+        "primeraCaja";
+        }
+        .contact-us__caja2{
+            display: none;
+        }   
+        .contact-us__caja1{
+            text-align: center;
+            padding-bottom: 25px;
+        }   
+        .contact-us__caja3{
+            display: none;
+        }   
+        .contact-us__form-input{
+            padding: 0  0   5px    0;
+        }    
+    }
+/*****************************ABOUT-US*********************************/
+@media only screen and (max-width: 925px){
+    .about-us__grid{
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.2fr 8.6fr 1.2fr;
+        grid-template-areas: 
+        "header    header"
+        "principal principal"
+        "footer    footer";
+        }
+    .about-us__principal{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "primeraCaja"
+        "primeraCaja"
+        "segundaCaja";
+        }
+    .about-us__caja1{
+        text-align: center;
+        }   
+    .about-us__caja2{
+        text-align: center;
+        padding-bottom: 0;    
+    }  
+    .about-us__img{
+        padding: 0;
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        padding: 0;
+    }
+    }
+/***************************REFERENCES********************************/
+@media only screen and (max-width: 925px){
+    .references__grid{
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.2fr 8.6fr  1.2fr;
+        grid-template-areas: 
+        "header    header"
+        "principal principal"
+        "footer    footer";
+        }
+    .references__principal{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1,4fr);
+        grid-template-areas:
+        "primeraCaja"
+        "segundaCaja"
+        "segundaCaja"
+        "segundaCaja";
+    }
+    .references__caja1{
+        text-align: center;
+        padding-top: 0;
+    }   
+    .references__caja2{
+        text-align: center;
+        padding-top: 0;
+
+    }  
+    .references__main-description{
+        padding: 5px   0px  10px   0px;
+        color: black;
+        text-align: center; 
+    }     
+    .references__img{
+        width: 90%;
+        height: 20%;
+        text-align: center;
+        padding: 0;
+    }
+    }
+    /***************************SERVICES*****************************/
+    @media only screen and (max-width: 925px){
+        .services__grid{
+            height: 100vh;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1.2fr 8.6fr  1.2fr;
+            grid-template-areas: 
+            "header    header"
+            "principal principal"
+            "footer    footer";
+            }
+        .services__principal{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(1,4fr);
+            grid-template-areas:
+            "primeraCaja primeraCaja"
+            "segundaCaja segundaCaja"
+            "terceraCaja terceraCaja"
+            "cuartaCaja  cuartaCaja";
+        }
+        .services__derecho-laboral{
+            padding-bottom: 30px;
+        }    
+        .services__familia-img{
+            display: none;
+        }
+        .services__penal-img{
+            display: none;
+        }
+        .services__laboral-img{
+            display: none;
+        }
+        .services__title{
+            text-align: center;
+        }
+        .services__description{
+            text-align: center;
+        }
+    } 
